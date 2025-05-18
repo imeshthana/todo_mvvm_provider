@@ -16,12 +16,10 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => TodoViewModel(),
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Todo App',
         home: TodoView(),
+        debugShowCheckedModeBanner: false,
       ),
     );
   }
 }
-
-
-// https://crudcrud.com/api/4edc952046be4ecf8d32ecae18e8ddf6

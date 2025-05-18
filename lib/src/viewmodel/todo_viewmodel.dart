@@ -6,7 +6,7 @@ class TodoViewModel extends ChangeNotifier {
   final ApiService _apiService = ApiService();
 
   List<TodoModel> _todos = [];
-  bool isLoading = false;
+  bool _isLoading = false;
 
   TodoViewModel() {
     loadTodos();
